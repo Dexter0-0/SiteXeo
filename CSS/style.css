@@ -1,0 +1,593 @@
+/* 
+    This file contains all the globally used stuff, a base layer of some sort. 
+    
+    Page.html -> - style.css (code used across all pages like the navbar or custom buttons and animations)
+                 - Page.css (code that is specific for that page and that page only wich is not included in the other pages)
+*/
+
+/*************************************** | Fonts | ****************************************/
+
+:root 
+{
+    --FontSizeTitleHuge: 55px;
+    --FontWeightTitleHuge: 550;
+
+    --FontSizeTitlePrimary: 45px;
+    --FontWeightTitlePrimary: 550;
+    
+    --FontSizeTitleSecondary: 35px;
+    --FontWeightTitleSecondary: 500;  
+
+    --FontSizeTitleSmall: 28px;
+    --FontWeightTitleSmall: 500;  
+
+    --FontSizeTextPrimary: 20px;
+    --FontWeightTextPrimary: 450;
+    
+    --FontSizeTextSecondary: 15px;
+    --FontWeightTextSecondary: 450;
+    
+    --FontSizeIconBig: 40px;
+    --FontSizeIconMedium: 30px;
+    --FontSizeIconSmall: 20px; 
+    --FontSizeIconTiny: 13px; 
+    
+    --FontSizeMenuItem: 16px;
+    --FontWeightMenuItem: 550;
+}
+
+@font-face 
+{
+    font-family: "Jeko";
+    src: url("Fonts/Jeko/Jeko.eot"); /* IE9 Compat Modes */
+    src: url("Fonts/Jeko/Jeko.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("Fonts/Jeko/Jeko.woff2") format("woff2"), /* Super Modern Browsers */
+         url("Fonts/Jeko/Jeko.woff") format("woff"), /* Pretty Modern Browsers */
+         url("Fonts/Jeko/Jeko.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("Fonts/Jeko/Jeko.svg#svgJeko") format("svg"); /* Legacy iOS */
+}
+
+@font-face 
+{
+    font-family: "Hodgeson";
+    src: url("Fonts/Hodgeson/Hodgeson.eot"); /* IE9 Compat Modes */
+    src: url("Fonts/Hodgeson/Hodgeson.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("Fonts/Hodgeson/Hodgeson.woff2") format("woff2"), /* Super Modern Browsers */
+         url("Fonts/Hodgeson/Hodgeson.woff") format("woff"), /* Pretty Modern Browsers */
+         url("Fonts/Hodgeson/Hodgeson.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("Fonts/Hodgeson/Hodgeson.svg#svgHodgeson") format("svg"); /* Legacy iOS */
+}
+
+@font-face 
+{
+    font-family: "Skizofrenia";
+    src: url("Fonts/Skizofrenia/Skizofrenia.eot"); /* IE9 Compat Modes */
+    src: url("Fonts/Skizofrenia/Skizofrenia.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("Fonts/Skizofrenia/Skizofrenia.woff2") format("woff2"), /* Super Modern Browsers */
+         url("Fonts/Skizofrenia/Skizofrenia.woff") format("woff"), /* Pretty Modern Browsers */
+         url("Fonts/Skizofrenia/Skizofrenia.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("Fonts/Skizofrenia/Skizofrenia.svg#svgSkizofrenia") format("svg"); /* Legacy iOS */
+}
+
+.FontTitle
+{
+    font-family: "Jeko";
+}
+
+.FontTextMain
+{
+    font-family: "Hodgeson";
+}
+
+.FontTextSecondary
+{
+    font-family: "Skizofrenia";
+}
+
+/*************************************** | Colors | ****************************************/
+
+:root 
+{
+    --BackgroundDarkPrimary: #121212;
+    --BackgroundDarkSecondary: #242424;
+    --BackgroundLightPrimary: #ffffff;
+    --AccentPrimary: #0084ff;  
+    --AccentSecondary: #000000;
+    --TextPrimary: #ffffff;
+    --TextSecondary: #121212;
+    --GradientPrimary: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
+    --GradientPrimaryHover: linear-gradient(to bottom left, rgb(209, 95, 253), rgb(61, 123, 255));
+    --GradientSecondary: linear-gradient(to bottom right, rgb(220, 132, 255), rgb(87, 140, 255));
+    --GradientSecondaryHover: linear-gradient(to bottom left, rgb(221, 149, 250), rgb(87, 118, 255));
+}
+
+/*************************************** | Global Elements | ****************************************/
+
+body
+{
+    background-image: var(--GradientPrimary);
+    font-family: Montserrat;
+    overflow-x: hidden;
+}
+
+i
+{
+    font-family: "FontAwesome";
+}
+
+/*************************************** | Global Classes | ****************************************/
+
+.Debug
+{
+    border: 2px solid red;
+}
+
+.Debug2
+{
+    border: 1px solid transparent;
+}
+
+.OverflowXDisabled
+{
+    overflow-x: hidden !important;
+}
+
+.Invisible
+{
+    visibility: hidden;
+}
+
+.Title
+{
+    color: var(--TextPrimary);
+    font-weight: var(--FontWeightTitlePrimary);
+    font-size: var(--FontSizeTitlePrimary);
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.SubTitle
+{
+    color: var(--TextPrimary);
+    font-weight: var(--FontWeightTitleSecondary);
+    font-size: var(--FontSizeTitleSecondary);
+}
+
+.TextPrimary
+{
+    color: var(--TextPrimary);
+    font-weight: var(--FontWeightTextPrimary);
+    font-size: var(--FontSizeTextPrimary);
+}
+
+.TextSecondary 
+{
+    color: var(--TextSecondary);
+    font-weight: var(--FontWeightTextSecondary);
+    font-size: var(--FontSizeTextSecondary);
+}
+
+.MenuActivator
+{
+    color: transparent;
+    font-size: 1px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.SectionTitleRow
+{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.ReadMoreIcon
+{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.GoBackIcon
+{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -15px;
+    font-size: 18px;
+}
+
+.Flag
+{
+    border-radius: 4px;
+    margin-top: -1px;
+}
+
+@media(min-width: 950px)
+{
+    .TextBox
+    {
+        border: 3px solid var(--BackgroundLightPrimary);
+        border-radius: 15px;
+        background: transparent;
+        padding: 40px;
+    }
+}
+
+.Video 
+{
+    border-radius: 15px;
+}
+
+.GradientBorder
+{
+    padding: 2px;
+    background: var(--GradientSecondary);
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.GradientBorder:hover 
+{
+    background: var(--GradientSecondaryHover);
+}
+
+.WaveLineBottom, .WaveLineTop
+{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 0px;
+    margin: 0px;
+    width: calc(100%);
+}
+
+.WaveLineBottom
+{
+    height: 40px;
+    margin-bottom: 0px;
+}
+
+.WaveLineTop
+{
+    margin-top: 0px;
+    height: 45px;
+}
+
+/*************************************** | Backgrounds | ****************************************/
+
+.BackgroundDarkPrimary
+{
+    background-color: var(--BackgroundDarkPrimary);
+}
+
+.BackgroundDarkSecondary
+{
+    background-color: var(--BackgroundDarkSecondary);
+}
+
+.BackgroundLightPrimary
+{
+    background-color: var(--BackgroundLightPrimary);
+}
+
+.BackgroundGradientPrimary
+{
+    background: var(--GradientPrimary);
+}
+
+.BackgroundImage
+{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.BackgroundVideo
+{
+    background-size: 100% auto;
+}
+
+.BackgroundWave
+{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 125px;
+}
+
+/*************************************** | Custom Elements | ****************************************/
+
+/* Custom Rounded Buttons */
+
+.ButtonRoundedBig, .ButtonRoundedMedium, .ButtonRoundedSmall
+{
+    background-color: var(--AccentPrimary);
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--TextPrimary);
+    text-decoration: none;
+}
+
+.ButtonRoundedSmall
+{
+    padding: 4px 10px;
+}
+
+.ButtonRoundedMedium
+{
+    padding: 5px 30px;
+}
+
+.ButtonRoundedBig
+{
+    padding: 10px 60px;
+}
+
+.ButtonRoundedBig:hover, .ButtonRoundedMedium:hover, .ButtonRoundedSmall:hover
+{
+    color: var(--TextPrimary);
+}
+
+/* Custom Transparent Rectangle Buttons */
+
+.ButtonTransparentBig, .ButtonTransparentMedium, .ButtonTransparentSmall
+{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid white;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--TextPrimary);
+    text-decoration: none;
+}
+
+.ButtonTransparentSmall
+{
+    padding: 4px 10px;
+    padding-right: 20px;
+}
+
+.ButtonTransparentMedium
+{
+    padding: 7px 25px;
+    padding-right: 35px;
+}
+
+.ButtonTransparentBig
+{
+    padding: 10px 60px;
+    padding-right: 70px;
+}
+
+.ButtonTransparentBig:hover, .ButtonTransparentMedium:hover, .ButtonTransparentSmall:hover
+{
+    color: var(--TextPrimary);
+}
+
+/* ButtonSwitch Toggle Button */
+
+.ButtonSwitch 
+{
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 28px;
+    border-radius: 20px;
+    background: rgb(209, 95, 253);
+    transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.ButtonSwitch::before 
+{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background: rgb(218, 218, 218);
+    border-radius: 50%;
+    transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ButtonSwitch:active::before 
+{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1);
+}
+
+input:checked + .ButtonSwitch 
+{
+    background: rgb(61, 123, 255);
+}
+
+input:checked + .ButtonSwitch::before 
+{
+    left: 42px;
+    background: rgb(218, 218, 218);
+}
+
+input:checked + .ButtonSwitch:active::before 
+{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
+}
+
+/*************************************** | Animations | ****************************************/
+
+/* Element size increase on Hover */
+
+@media(min-width: 800px)
+{
+    .AnimationIncrease0, .AnimationIncrease1, .AnimationIncrease2, .AnimationIncrease3, .AnimationIncrease4
+    {
+        transition: transform 0.2s;
+    }
+
+    .AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover, .AnimationIncrease4:hover
+    {
+        opacity: 80%;
+    }
+
+    .AnimationIncrease0:hover
+    {
+        transform: scale(1.05);
+    }
+
+    .AnimationIncrease1:hover
+    {
+        transform: scale(1.1);
+    }
+
+    .AnimationIncrease2:hover
+    {
+        transform: scale(1.15);
+    }
+
+
+    .AnimationIncrease3:hover
+    {
+        transform: scale(1.25);
+    }
+
+    .AnimationIncrease4:hover
+    {
+        transform: scale(1.35);
+    }
+}
+
+/* Element fades in */
+
+.AnimationFadeIn0, .AnimationFadeIn1, .AnimationFadeIn2, .AnimationFadeIn3
+{
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.AnimationFadeIn0
+{
+    animation: AnimationFadeIn ease 1.5s;
+}
+
+.AnimationFadeIn1
+{
+    animation: AnimationFadeIn ease 2.5s;
+}
+
+.AnimationFadeIn2
+{
+    animation: AnimationFadeIn ease 3.5s;
+}
+
+.AnimationFadeIn3
+{
+    animation: AnimationFadeIn ease 4.5s;
+}
+
+@keyframes AnimationFadeIn 
+{ 
+    0% 
+    { 
+        opacity: 0; 
+    } 
+    
+    100% 
+    { 
+        opacity: 1; 
+    } 
+} 
+
+/* Underline from left to right on Hover */
+
+@media(min-width: 800px)
+{
+  .AnimationUnderline
+  {
+    background-image: linear-gradient(var(--TextPrimary), var(--TextPrimary));
+    background-position: 0% 77.5%;
+    background-position-y: 35px;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.5s;
+  }
+  
+  .AnimationUnderline:hover 
+  {
+    background-size: 100% 2px;
+    color: var(--TextPrimary);
+  }
+}
+
+/*************************************** | Navbar | ****************************************/
+
+#Navbar
+{
+    height: 60px;
+    -webkit-box-shadow: 0 1px 5px 1px black;
+    -moz-box-shadow: 0 1px 5px 1px black;
+    box-shadow: 0 1px 5px 1px black;
+}
+
+#NavbarMenu
+{
+    margin-left: auto;
+}
+
+@media (max-width: 767px) 
+{
+    .navbar-collapse
+    {
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+}
+
+#NavbarLogo
+{
+    padding-left: 15px;
+}
+
+#PhoneMenuToggler
+{
+    padding-right: 15px;
+}
+
+#PhoneMenuIcon
+{
+    color: var(--TextPrimary);
+    font-size: var(--FontSizeIconMedium);
+}
+
+.nav-item
+{
+    margin-right: 10px;
+}
+
+.nav-link
+{
+    color: var(--TextPrimary);
+    font-size: var(--FontSizeMenuItem);
+    font-weight: var(--FontWeightMenuItem); 
+    display: block;  
+}
+    
+.ActiveLink
+{
+    background: -webkit-linear-gradient(bottom right, rgb(223, 145, 253), rgb(119, 161, 252));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ContactLink
+{
+    background-image: var(--GradientPrimary);
+    font-size: var(--FontSizeMenuItem);
+    font-weight: var(--FontWeightMenuItem);  
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+#PhoneIcon
+{
+    font-size: var(--FontSizeIconTiny);
+}

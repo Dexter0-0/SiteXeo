@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+    <meta name = "language" content = "RO">
+    <meta name = "Classification" content = "Robotics Team">
+    <meta name = "description" content = "FTC Robotics team in Alba Iulia, Romania">
+    <meta name = "keywords" content = "Xeo, Robotics, Robotics team, FTC, First Tech Challenge">
+    <meta name = "author" content = "Team Xeo">
+    <meta http-equiv = "Expires" content = "0">
+    <meta name = "theme-color" content = "#121212">
+    <meta name = "msapplication-navbutton-color" content = "#121212">
+    <meta name = "apple-mobile-web-app-status-bar-style" content = "#121212">
+    <meta name = "apple-mobile-web-app-capable" content = "yes">
+    <meta name = "mobile-web-app-capable" content = "yes">
+    <meta http-equiv = "Cache-Control" content = "cache"> 
+
+    <!-- Page Title and Favicon -->
+    <title>Team Xeo</title>
+    <link rel = "icon" type = "image/png" href = "Images/LogoMain.png">
+
+    <!-- JQuerry-->
+    <script src = "ThirdParty/JQuery/Jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href = "ThirdParty/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
+    <script src = "ThirdParty/Bootstrap/js/bootstrapmin.js"></script>
+
+    <!-- Custom Fonts and icons -->
+    <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css" crossorigin>
+    <link href = "ThirdParty/FontAwesome/css/all.min.css" rel = "stylesheet" type = "text/css">
+
+    <!-- CSS -->
+    <link href = "CSS/style.css" rel = "stylesheet">
+    <link href = "CSS/contact.css" rel = "stylesheet">
+
+    <!-- Javascript -->
+    <script src = "Javascript/script.js"></script>
+    <script src = "Javascript/contact.js"></script>
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class = "navbar navbar-expand-md fixed-top BackgroundDarkPrimary" id = "Navbar">  
+
+        <!-- Xeo Logo -->
+        <a class = "navbar-brand" href = "#" id = "NavbarLogo">
+            <img class = "AnimationIncrease1" src = "Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
+        </a>
+
+        <!-- Phone Menu Toggle -->
+        <ButtonRounded type = "ButtonRounded" class = "navbar-toggler" data-toggle = "collapse" data-target = "#NavbarCollapse" id = "PhoneMenuToggler">
+            <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
+        </ButtonRounded>
+
+        <!-- Navigation Bar Menu -->
+        <div class = "collapse navbar-collapse BackgroundDarkPrimary" id = "NavbarCollapse">           
+            <ul class = "navbar-nav" id = "NavbarMenu">
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "HomeLink" href = "index.html"><i class = "fas fa-angle-left GoBackIcon"></i>Home</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link ActiveLink" id = "PhoneEmailLink" href = "#">Phone & Email</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "SocialMediaLink" href = "#SocialMediaSectionStart">Social Media</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "LocationLink" href = "#LocationSectionStart">Location</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "ButtonRoundedSmall AnimationIncrease1" id = "ContactLink" href = "#">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Phone & Email Section -->
+    <section class = "BackgroundDarkPrimary" id = "PhoneEmailSection">
+        <div class = "container-fluid">
+            <div class = "row text-center SectionTitleRow" id = "PhoneEmailTitleRow">
+                <p class = "MenuActivator" id = "PhoneEmailElement">a</p>
+                <h1 class = "Title AnimationFadeIn1" id = "ContactsTitle">Contact</h1>
+            </div>
+
+            <div class = "row PhoneEmailRow">
+                <div class = "col-lg-4 col-12" id = "PhoneCol">
+                    <div class = "row text-center" id = "PhoneTitleRow">
+                        <h1 class = "SubTitle PhoneEmailSubTitle AnimationFadeIn2" id = "PhoneTitle">Phone (Mentor) <i class = "fas fa-phone-alt" onmouseover = "PhoneHoverEffect('over', 2);" onmouseout = "PhoneHoverEffect('out', 2);" id = "PhoneIcon2"></i></h1>
+                        <p class = "PhoneEmailContentMargin TextPrimary AnimationFadeIn2">0744399466</p>
+
+                        <div class = "PhoneEmailContentMargin">
+                            <a href = "tel:+4074-439-9466">
+                                <div class = "ButtonRoundedMedium BackgroundGradientPrimary AnimationFadeIn2 AnimationIncrease1">Press to call</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-4 col-12" id = "PhoneCol">
+                    <div class = "row text-center" id = "PhoneTitleRow">
+                        <h1 class = "SubTitle PhoneEmailSubTitle AnimationFadeIn2" id = "PhoneTitle2">Phone (Team) <i class = "fas fa-phone-alt" onmouseover = "PhoneHoverEffect('over', 3);" onmouseout = "PhoneHoverEffect('out', 3);" id = "PhoneIcon3"></i></h1>
+                        <p class = "PhoneEmailContentMargin TextPrimary AnimationFadeIn2">0724124112</p>
+
+                        <div class = "PhoneEmailContentMargin">
+                            <a href = "tel:+4072-412-4112">
+                                <div class = "ButtonRoundedMedium BackgroundGradientPrimary AnimationFadeIn2 AnimationIncrease1">Press to call</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-4 col-12" id = "EmailCol">
+                    <div class = "row text-center" id = "EmailTitleRow">
+                        <h1 class = "SubTitle PhoneEmailSubTitle AnimationFadeIn2" id = "EmailTitle">Email <i class = "fas fa-envelope" onmouseover = "EmailHoverEffect('over');" onmouseout = "EmailHoverEffect('out');" id = "EmailIcon2"></i></h1>
+                        <p class = "PhoneEmailContentMargin TextPrimary AnimationFadeIn2">xeoalbaiulia@gmail.com</p>
+
+                        <div class = "PhoneEmailContentMargin">
+                            <a href = "mailto:xeoalbaiulia@gmail.com">
+                                <div class = "ButtonRoundedMedium BackgroundGradientPrimary AnimationFadeIn2 AnimationIncrease1">Press to email</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Wave -->
+    <div class = "BackgroundWave" id = "SocialMediaSectionStart" style = "background-image: url(Images/WaveBottom.svg);"></div>
+
+    <!-- Social Media Section -->
+    <section id = "SocialMediaSection">
+        <div class = "container-fluid">
+            <div class = "row text-center SectionTitleRow" id = "SocialMediaTitleRow">
+                <h1 class = "Title" id = "SocialMediaTitle">Social Media<i class = "fas fa-share-alt" id = "SocialMediaIcon"></i></h1>
+                <p class = "MenuActivator" id = "SocialMediaElement">a</p>
+            </div>
+
+            <div class = "row" id = "SocialMediaEmbedsRow">
+                <div class = "col text-center SocialMediaCol" id = "FacebookCol">
+                    <a href = "https://www.facebook.com/TeamXeoFTC/" target = "_blank">
+                        <h1 class = "SubTitle SocialMediaTitle">Facebook <i class = "fab fa-facebook AnimationIncrease2"></i></h1>
+                    </a>
+                    <div class = "SocialMediaEmbedContainer" id = "FacebookEmbedContainer">
+                        <iframe class = "Embed" id = "FacebookEmbed" src = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeamXeoFTC%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=282142349930508" scrolling = "no" frameborder = "0" allowfullscreen = "true" allow = "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading = "lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class = "col text-center SocialMediaCol" id = "InstagramCol">
+                    <a href = "https://www.instagram.com/teamxeo/" target = "_blank">
+                        <h1 class = "SubTitle SocialMediaTitle">Instagram <i class = "fab fa-instagram AnimationIncrease2"></i></h1>
+                    </a>
+                    <div class = "SocialMediaEmbedContainer" id = "InstagramEmbedContainer">
+                        <div class = "Embed" id = "InstagramFeed">
+                            <a href = "https://www.instagram.com/teamxeo/?hl=ro" target = "_blank">
+                                <img class = "Embed" id = "InstagramEmbed" src = "Images/InstagramEmbed.png" width = "300" height = "500">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col text-center SocialMediaCol" id = "DiscordCol">
+                    <a href = "https://discord.gg/BsY9aQ25cA" target = "_blank">
+                        <h1 class = "SubTitle SocialMediaTitle">Discord <i class = "fab fa-discord AnimationIncrease2"></i></h1>
+                    </a>
+                    <div class = "SocialMediaEmbedContainer" id = "DiscordEmbedContainer">
+                        <iframe class = "Embed" id = "DiscordEmbed" src = "https://discord.com/widget?id=724282611165560965&theme=dark" style = "border-radius: 15px;" width = "300" height = "500" allowtransparency = "true" frameborder = "0" sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" loading = "lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "row text-center" id = "SocialMediaYoutubeRow">
+                <a href = "https://www.youtube.com/channel/UCTivZ20zShbyBA3E3P4m7QQ" target = "_blank">
+                    <h1 class = "SubTitle SocialMediaTitle">YouTube <i class = "fab fa-youtube AnimationIncrease2"></i></h1>
+                </a>
+                <div class = "YoutubeContainer">
+                    <iframe id = "YouTubeEmbed" style = "border-radius: 15px; width: 100%; max-width: 900px; max-height: 500px; height: 60vw;" src = "https://www.youtube.com/embed/Jn630MXSwT4" frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading = "lazy"></iframe>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave -->
+    <div class = "BackgroundWave" id = "LocationSectionStart" style = "background-image: url(Images/WaveTop.svg);"></div>
+
+    <!-- Location Section -->
+    <section class = "BackgroundDarkPrimary" id = "LocationSection">
+        <div class = "container-fluid">
+            <div class = "row text-center SectionTitleRow" id = "LocationTitleRow">
+                <h1 class = "Title" id = "LocationTitle">Location <i class = "fas fa-map-pin" id = "LocationIcon"></i></h1>
+                <p class = "MenuActivator" id = "LocationElement">a</p>
+            </div>
+            
+            <div class = "row text-center" id = "LocationTextRow">
+                <h1 class = "SubTitle" id = "LocationText">Bulevardul 1 Decembrie 1918 11, Alba Iulia</h1>
+            </div>
+
+            <div class = "row text-center" id = "LocationMapRow">
+                <div id = "MapContainer">
+                    <iframe class = "AnimationIncrease0" id = "Map" src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1384.1122123589803!2d23.562773457992414!3d46.066566068664045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ea7dc7a06f241%3A0x4c54d423d78bd172!2zQ29sZWdpdWwgTmHIm2lvbmFsIEhvcmVhIENsb8iZY2EgyJlpIENyaciZYW4!5e0!3m2!1sro!2sro!4v1615225814275!5m2!1sro!2sro" frameborder = "0" scrolling = "no" marginheight = "0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

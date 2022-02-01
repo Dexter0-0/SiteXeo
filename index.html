@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+    <meta name = "language" content = "RO">
+    <meta name = "Classification" content = "Robotics Team">
+    <meta name = "description" content = "FTC Robotics team in Alba Iulia, Romania">
+    <meta name = "keywords" content = "Xeo, Robotics, Robotics team, FTC, First Tech Challenge">
+    <meta name = "author" content = "Team Xeo">
+    <meta http-equiv = "Expires" content = "0">
+    <meta name = "theme-color" content = "#121212">
+    <meta name = "msapplication-navbutton-color" content = "#121212">
+    <meta name = "apple-mobile-web-app-status-bar-style" content = "#121212">
+    <meta name = "apple-mobile-web-app-capable" content = "yes">
+    <meta name = "mobile-web-app-capable" content = "yes">
+    <meta http-equiv = "Cache-Control" content = "cache"> 
+
+    <!-- Page Title and Favicon -->
+    <title>Team Xeo</title>
+    <link rel = "icon" type = "image/png" href = "Images/LogoMain.png">
+
+    <!-- JQuerry-->
+    <script src = "ThirdParty/JQuery/Jquery.min.js"></script>
+
+    <!-- Animation Library -->
+    <script src = "ThirdParty/Animations/TweenMax.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href = "ThirdParty/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
+    <script src = "ThirdParty/Bootstrap/js/bootstrapmin.js"></script>
+
+    <!-- Custom Fonts and icons -->
+    <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css" crossorigin>
+    <link href = "ThirdParty/FontAwesome/css/all.min.css" rel = "stylesheet" type = "text/css">
+
+    <!-- CSS -->
+    <link href = "CSS/style.css" rel = "stylesheet">
+    <link href = "CSS/index.css" rel = "stylesheet">
+
+    <!-- Javascript -->
+    <script src = "Javascript/script.js"></script>
+    <script src = "Javascript/index.js"></script>
+    <script src = "Javascript/SponsorsRobotAnimation.js"></script>
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class = "navbar navbar-expand-md fixed-top BackgroundDarkPrimary" id = "Navbar">  
+
+        <!-- Xeo Logo -->
+        <a class = "navbar-brand" href = "#" id = "NavbarLogo">
+            <img class = "AnimationIncrease1" src = "Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
+        </a>
+    
+        <!-- Phone Menu Toggle -->
+        <ButtonRounded type = "ButtonRounded" class = "navbar-toggler" data-toggle = "collapse" data-target = "#NavbarCollapse" id = "PhoneMenuToggler">
+            <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
+        </ButtonRounded>
+
+        <!-- Navigation Bar Menu -->
+        <div class = "collapse navbar-collapse BackgroundDarkPrimary" id = "NavbarCollapse">           
+            <ul class = "navbar-nav" id = "NavbarMenu">
+                <li class = "nav-item">
+                    <a class = "nav-link ActiveLink" id = "HomeLink" href = "#">Home</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "AboutLink" href = "#AboutSectionStart">About us</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "SponsorsLink" href = "#SponsorsSectionStart">Sponsors</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "BlogLink" href = "#BlogSectionStart">Blog</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "ButtonRoundedSmall AnimationIncrease1" id = "ContactLink" href = "contact.html">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class = "BackgroundDarkPrimary" id = "HomeSection">
+        <div class = "container-fluid" style = "min-height: 85vh;">
+            <div class = "row text-center SectionTitleRow" id = "HomeTitleRow">
+                <p class = "MenuActivator" id = "HomeElement">a</p>
+                <h1 class = "Title AnimationFadeIn1" id = "HomeTitle" onclick = "alert('Ai gasit primul easter egg !! 1 - W');">Team Xeo</h1>
+                <h1 class = "SubTitle AnimationFadeIn2" id = "HomeSubTitle">"Team divides tasks and multiplies success"</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave -->
+    <div class = "BackgroundWave" id = "AboutSectionStart" style = "background-image: url(Images/WaveBottom.svg);"></div>
+
+    <!-- About Section -->
+    <section id = "AboutSection">
+        <div class = "container-fluid Debug2" style = "height: 67.5vh;">
+            <div class = "row text-center SectionTitleRow VerticalAlign TextBox" id = "AboutTitleRow">
+                <p class = "MenuActivator" id = "AboutElement">a</p>
+                <h1 class = "Title" id = "AboutTitle">About us</h1>
+                <h1 class = "SubTitle" id = "AboutSubTitle">We are a robotics team from Alba Iulia, Romania and we take part in <a class = "AnimationIncrease0" href = "https://www.firstinspires.org/robotics/ftc" target = "_blank" style = "color: white;">First Tech Challenge</a></h1>
+                <div>
+                    <a class = "ButtonTransparentBig AnimationIncrease0" id = "AboutReadMore" href = "about.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave -->
+    <div class = "BackgroundWave" id = "SponsorsSectionStart" style = "background-image: url(Images/WaveTop.svg);"></div>
+
+    <!-- Sponsors Section -->
+    <section class = "BackgroundDarkPrimary" id = "SponsorsSection">
+        <div class = "container-fluid">
+            <div class = "row text-center SectionTitleRow">
+                <h1 class = "Title" id = "SponsorsTitle" style = "margin-top: 7.5vh;">Sponsors</h1>
+            </div>
+            <div class = "row">
+                <p class = "MenuActivator" id = "SponsorsElement" style = "margin-top: 12.5vh;">a</p>
+                <div id = "SponsorsRobotContainer">
+                    <svg id = "SponsorsRobotSVG" version = "1.1" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink = "http://www.w3.org/1999/xlink" x = "0px" y = "0px" viewBox = "0 0 3000 400" enable-background = "new 0 0 652 400" xml:space = "preserve" preserveAspectRatio = "slice">
+                        <defs>
+                            <clipPath id = "clipPath1">
+                                <rect x = "222.7" y = "291.7" width = "81.2" height = "83.6"/>
+                            </clipPath>
+                        </defs>
+                        
+                        <g id = "Base">
+                            <rect id = "robotbase1" y = "358.5" fill = "#4E5052" width = "210.2" height = "16.4"/>
+                            
+                            <g id = "robotbase2">
+                                <path fill = "#A6A9AB" d = "M172.5,358.5h-69v-40.2h63.2c3.2,0,5.8,2.6,5.8,5.8V358.5z"/>
+                                <path fill = "#939699" d = "M103.5,358.5h-69V324c0-3.2,2.6-5.8,5.8-5.8h63.2V358.5z"/>
+                            </g>
+                        
+                            <g id = "robotbase3">
+                                <path fill = "#4E5052" d = "M138,255v-67.3c-8.4,9.6-20.8,7.8-34.5,7.8s-26.1-6-34.5-15.6V255l-17.2,63.2h103.5L138,255z"/>
+                                <path fill = "#65676A" d = "M138,255v-75.1c-8.4,9.6-20.8,15.6-34.5,15.6v122.8h51.8L138,255z"/>
+                            </g>
+                        </g>
+
+                        <g id = "wholearm">
+                            <rect id = "wholearmcontainer" x = "55.2" fill = "none" width = "400" height = "400"/>
+                            
+                            <g id = "armsection">                   
+                                <rect id = "arm1" x = "79" y = "123.2" transform = "matrix(0.9801 -0.1985 0.1985 0.9801 -25.7742 34.6792)" fill = "#4E5052" width = "162" height = "45.3"/>
+                                <g id = "rotationpoint1">
+                                    <circle fill = "#CAD9DE" cx = "103.5" cy = "157.3" r = "46"/>
+                                    <circle fill = "#AAC3CF" cx = "103.5" cy = "157.3" r = "23"/>
+                                </g>
+                            </g>
+
+                            <g id = "elbowsection">
+                                <g id = "elbowsectiondonotmove">
+                                    <g id = "rotationpoint2">
+                                        <polygon id = "arm2donottouch" fill = "#4E5052" points = "276.9,267.2 257.4,274.1 197.2,123.1 235.5,109.9"/>
+                                        <g>
+                                            <circle fill = "#CAD9DE" cx = "223.2" cy = "133.7" r = "40.2"/>
+                                        </g>
+                                        <g>
+                                            <circle fill = "#AAC3CF" cx = "223.2" cy = "133.7" r = "17.2"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            
+                                <g id = "wristsection">
+                                    <path id = "pincerright" fill = "#4E5052" d = "M312.8,278l-31.4-23.9c-2.1-8-9.4-13.9-18-13.8c-10.1,0.1-18.3,8.5-18.1,18.6c0.1,10.1,8.5,18.3,18.6,18.1c1.5,0,2.9-0.2,4.2-0.6l33.1,12.7l-5.9,45l21-47.7l1.9-4.3L312.8,278z"/>
+                                    <path id = "pincerleft" fill = "#4E5052" d = "M214.2,278l31.4-23.9c2.1-8,9.4-13.9,18-13.8c10.1,0.1,18.3,8.5,18.1,18.6c-0.1,10.1-8.5,18.3-18.6,18.1c-1.5,0-2.9-0.2-4.2-0.6l-33.1,12.7l5.9,45l-21-47.7l-1.9-4.3L214.2,278z"/>
+                                    
+                                    <g id = "rotationpoint">
+                                        <circle fill = "#CAD9DE" cx = "263.6" cy = "259" r = "23"/>
+                                        <circle fill = "#AAC3CF" cx = "263.6" cy = "259" r = "12.3"/>
+                                    </g>
+                                    
+                                    <g id = "SponsorsBox0box">
+                                        <a xlink:href = "https://www.ipec.ro/index.php" target = "_blank">
+                                            <image x = "232" y = "311.6" href = "Images/Sponsors/IPEC.png" height = "63.2" width = "63.2"/>
+                                        </a>
+                                    </g>
+                                    
+                                    <g id = "SponsorsBox1box">
+                                        <a xlink:href = "https://www.apulum.ro/" target = "_blank">
+                                            <image x = "232" y = "311.6" href = "Images/Sponsors/Primarie.png" height = "63.2" width = "63.2"/>
+                                        </a>
+                                    </g>
+                                    
+                                    <g id = "SponsorsBox2box">
+                                        <a xlink:href = "https://rotaryclubab.ro/" target = "_blank">
+                                            <image x = "232" y = "311.6" href = "Images/Sponsors/Rotary.png" height = "63.2" width = "63.2"/>
+                                        </a>
+                                    </g>
+                                    
+                                    <g id = "SponsorsBox3box">
+                                        <a xlink:href = "https://albascout.ro/" target = "_blank">
+                                            <image x = "232" y = "311.6" href = "Images/Sponsors/Cercetasi.png" height = "63.2" width = "63.2"/>
+                                        </a>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id = "conveyorandbelt">
+                            <g id = "cog">
+                                <circle fill = "#F29111" cx = "333.5" cy = "349.4" r = "17.9"/>
+                                <circle fill = "#CF7215" cx = "333.5" cy = "349.4" r = "5.3"/>
+                                <circle fill = "#4E5052" cx = "333.5" cy = "349.4" r = "3.2"/>
+                                <path fill = "#4E5052" d = "M325,345.3c0.9-1.7,2.2-3.1,3.8-4.1l-1.2-4.1c-3,1.4-5.5,4-6.8,7.2L325,345.3z"/>
+                                <path fill = "#4E5052" d = "M331.4,358.7c-0.9-0.2-1.8-0.6-2.6-1.1l-2.9,3.1c1.4,0.9,2.9,1.6,4.6,2c1.7,0.4,3.4,0.5,5,0.2l-1.2-4.1C333.3,359,332.3,358.9,331.4,358.7z"/>
+                                <path fill = "#4E5052" d = "M341.4,344.1c1,1.6,1.6,3.4,1.6,5.4l4.2,1c0.3-3.5-0.8-6.8-2.9-9.5L341.4,344.1z"/>
+                            </g>
+                            
+                            <path id = "belt" fill = "none" stroke = "#4E5052" stroke-width = "3" stroke-miterlimit = "10" d = "M5000,374.9H331.8c-14,0-25.5-11.5-25.5-25.5v0c0-14,11.5-25.5,25.5-25.5H5000"/>
+                        </g>
+                        
+                        <rect id = "containerdeletethis" fill = "none" width = "5000" height = "400"/>
+                        
+                        <g id = "rotationpointcover">
+                            <circle fill = "#CAD9DE" cx = "103.5" cy = "157.3" r = "46"/>
+                            <circle fill = "#AAC3CF" cx = "103.5" cy = "157.3" r = "23"/>
+                        </g>
+                    
+                        <g id = "SponsorsBox0boxmoveoff">
+                            <a xlink:href = "https://www.ipec.ro/index.php" target = "_blank">
+                                <image x = "315" y = "259.1" href = "Images/Sponsors/IPEC.png" height = "63.2" width = "63.2"/>
+                            </a>
+                        </g>
+
+                        <g id = "SponsorsBox1boxmoveoff">
+                            <a xlink:href = "https://www.apulum.ro/" target = "_blank">
+                                <image x = "315" y = "259.1" href = "Images/Sponsors/Primarie.png" height = "63.2" width = "63.2"/>
+                            </a>
+                        </g>
+                        
+                        <g id = "SponsorsBox2boxmoveoff">
+                            <a xlink:href = "https://rotaryclubab.ro/" target = "_blank">
+                                <image x = "315" y = "259.1" href = "Images/Sponsors/Rotary.png" height = "63.2" width = "63.2"/>
+                            </a>
+                        </g>
+                        
+                        <g id = "SponsorsBox3boxmoveoff">
+                            <a xlink:href = "https://albascout.ro/" target = "_blank">
+                                <image x = "315" y = "259.1" href = "Images/Sponsors/Cercetasi.png" height = "63.2" width = "63.2"/>
+                            </a>
+                        </g>
+
+                        <g style = "clip-path: url(#clipPath1);">
+                            <g id = "SponsorsBox0boxrise">
+                                <a xlink:href = "https://www.ipec.ro/index.php" target = "_blank">
+                                    <image x = "232" y = "311.6" href = "Images/Sponsors/IPEC.png" height = "63.2" width = "63.2"/>
+                                </a>
+                            </g>
+
+                            <g id = "SponsorsBox1boxrise">
+                                <a xlink:href = "https://www.apulum.ro/" target = "_blank">
+                                    <image x = "232" y = "311.6" href = "Images/Sponsors/Primarie.png" height = "63.2" width = "63.2"/>
+                                </a>
+                            </g>
+                            
+                            <g id = "SponsorsBox2boxrise">
+                                <a xlink:href = "https://rotaryclubab.ro/" target = "_blank">
+                                    <image x = "232" y = "311.6" href = "Images/Sponsors/Rotary.png" height = "63.2" width = "63.2"/>
+                                </a>
+                            </g>
+                            
+                            <g id = "SponsorsBox3boxrise">
+                                <a xlink:href = "https://albascout.ro/" target = "_blank">
+                                    <image x = "232" y = "311.6" href = "Images/Sponsors/Cercetasi.png" height = "63.2" width = "63.2"/>
+                                </a>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div style = "height: 15vh;" id = "BlogSectionStart"></div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class = "BackgroundDarkPrimary" id = "BlogSection">
+        <div class = "container-fluid" id = "BlogContainer">
+            <div class = "row text-center SectionTitleRow">
+                <h1 class = "Title" id = "BlogTitle">Blog</h1>
+            </div>
+
+            <div class = "PCContentChooser">
+                <div class = "row text-center SectionTitleRow" id = "ContentChooserRow">
+                    <div class = "col-5">
+                        <div class = "float-end">
+                            <h1 class = "TextPrimary ContentChooserText" id = "TeamEvents">Team Events</h1>
+                        </div>
+                    </div>
+    
+                    <div class = "col-2">
+                        <input type = "checkbox" hidden = "hidden" id = "ContentType" onclick = "BlogContentChanged();">
+                        <label class = "ButtonSwitch" for = "ContentType"></label>
+                    </div>
+    
+                    <div class = "col-5">
+                        <div class = "float-start">
+                            <h1 class = "TextPrimary ContentChooserText ContentChooserOpacity" id = "Tutorials">Tutorials - soon <i class = "fas fa-clock"></i></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "PhoneContentChooser">
+                <div class = "row text-center SectionTitleRow" id = "ContentChooserRow">
+                    <div class = "col-4">
+                        <div class = "float-end">
+                            <h1 class = "TextPrimary ContentChooserText" id = "TeamEvents">Team Events</h1>
+                        </div>
+                    </div>
+    
+                    <div class = "col-4">
+                        <input type = "checkbox" hidden = "hidden" id = "ContentType" onclick = "BlogContentChanged();">
+                        <label class = "ButtonSwitch" for = "ContentType"></label>
+                    </div>
+    
+                    <div class = "col-4">
+                        <div class = "float-start">
+                            <h1 class = "TextPrimary ContentChooserText ContentChooserOpacity" id = "Tutorials">Tutorials - soon <i class = "fas fa-clock"></i></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class = "MenuActivator" id = "BlogElement">a</p>
+
+            <div class = "BlogPostsWrap">
+
+                <p class = "BlogAnimation BlogActivator MenuActivator">a</p>
+
+                <div class = "row">
+                    <div class = "BlogPost">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/8March.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">8th of March</h1>
+                            <p class = "TextPrimary BlogText">On 8th March, we have been celebrating women everywhere and we are grateful that they are always present in our lives, and together with our junior team, Xeo Academy, we (...)</p>                        
+                            
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-0/Blog-ID-0.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/1March.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">1st of March</h1>
+                            <p class = "TextPrimary BlogText">First of March is an important day in our calendar, it represents a tradition in which we share different symbols of luck, joy and every blessing that we can imagine in (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-1/Blog-ID-1.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/MentalHealth.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Mental Health</h1>
+                            <p class = "TextPrimary BlogText">Like flowers that grow in the sun and our thoughts grow in a positive direction, if we take care of them and help them bloom. Emotion guides us in all the journeys of (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-2/Blog-ID-2.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/10FacultatiDeNota10.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">10 Facultati de nota 10</h1>
+                            <p class = "TextPrimary BlogText">We all think about our future and what we will do after we will finish high school. On the second day of Xeo Talks 2020, our Alumni members talked about (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-3/Blog-ID-3.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/DesagaCuFericire.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Desaga cu fericire</h1>
+                            <p class = "TextPrimary BlogText">The winter holidays are the most beautiful of the year, but above the price during this period the most important thing is not to open the souls and to (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-4/Blog-ID-4.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/TurneuLOL.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">League Tournament</h1>
+                            <p class = "TextPrimary BlogText">As every day passed by us, we only got more work, stress, and problems, so we decided to make a relaxing activity that maintains the spirit of (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-5/Blog-ID-5.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundVideo BlogVideo BlogVideoRight">
+                            <video muted loop class = "Video">
+                                <source src = "Videos/VideoInscriere.mp4" type = "video/mp4">
+                            </video> 
+                        </div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Team registration video</h1>
+                            <p class = "TextPrimary BlogText">One of the most intriguing and complicated tasks of our registration requirements was the video, in which we (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-6/Blog-ID-6.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/EcoFirst.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Eco First</h1>
+                            <p class = "TextPrimary BlogText">The planet is our home, our only home, so we must keep it clean, healthy and happy. We should give back all the love mother nature gives us and make sure that she (...)</p>                        
+                            
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-7/Blog-ID-7.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/DiscordServer.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Xeo's BRD FIRST Tech Challenge Romania Server</h1>
+                            <p class = "TextPrimary BlogText">Our idea to create a Discord server was inspired by (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-8/Blog-ID-8.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/FlightFestival2020.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Flight festival 2020</h1>
+                            <p class = "TextPrimary BlogText">For us, Flight Festival is already a tradition. This year, we had the pleasure of participating, in the second edition of (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-9/Blog-ID-9.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/RobotsToTheRescue.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Robots to the rescue</h1>
+                            <p class = "TextPrimary BlogText">Robots to the rescue was a world wide competition which was hosted by PTC and had teams from different (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-10/Blog-ID-10.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/DevTalks2020.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Dev Talks 2020</h1>
+                            <p class = "TextPrimary BlogText">In 2020 DevTalks has reached A new dimension thought DevTalks Reimagined, bringing together this year more than 4000 participants. (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-11/Blog-ID-11.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/PrintareViziere.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">3D Printed protective visors</h1>
+                            <p class = "TextPrimary BlogText">This year's situation was... different. We met something new, unfortunately not pleasant, and we have to (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-12/Blog-ID-12.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/Improve.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Improve</h1>
+                            <p class = "TextPrimary BlogText">Improve, was one of our main events last year and its purpose was to help the newer and even the veteran teams prepare themselves better for the national competition. In order to (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-13/Blog-ID-13.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/8March2.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">8th of March</h1>
+                            <p class = "TextPrimary BlogText">Women all around the world are praised and celebrated especially on the 8th of March every year and because of that we couldn’t let this occasion (...)</p>                        
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-14/Blog-ID-14.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/BloodDonation.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Blood donation</h1>
+                            <p class = "TextPrimary BlogText">We started with the idea that health is always the priority. And when our community needs us, we act. We discovered through some team members that (...)</p>                        
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-15/Blog-ID-15.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/TXS.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">TXS (The Xeo Scrimmage)</h1>
+                            <p class = "TextPrimary BlogText">On the 29th of february, 2020, a unique day that occurs only every 4 years, we organized one of our most ambitious events of this season, (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-16/Blog-ID-16.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/RegionalaSez4.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Season 4 Regional</h1>
+                            <p class = "TextPrimary BlogText">We began our trip to Cluj on Thursday, the day before the Cluj Qualifying Tournament would begin so that we would be able to prepare properly for (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/BlogTemplate.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/XeoCaravan.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">Xeo caravan 2020</h1>
+                            <p class = "TextPrimary BlogText">We improved it and did it for the second time. From 24.02.2020 to 28.02.2020 we planned to go to the schools in our city and spread the ideas of FIRST and (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-17/Blog-ID-17.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/CharityDemo.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">1st of December charity demo</h1>
+                            <p class = "TextPrimary BlogText">1st of December is the National Day of Romania, and it first took place at Alba Iulia, so Xeo decided to organize a (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-18/Blog-ID-18.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageRight" style = "background-image: url(Images/PreviewuriBlog/ScienceWeek.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextRight BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">INTERNATIONAL SCIENCE WEEK 2019</h1>
+                            <p class = "TextPrimary BlogText">This event started as a thought, how could we do something that would have an impact on society by finding solutions to real-life problems, while also getting (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-19/Blog-ID-19.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class = "BlogAnimation BlogActivator MenuActivator BlogDeleteMargin">a</p>
+    
+                <div class = "row">
+                    <div class = "BlogPost BlogDelete">
+                        <div class = "BackgroundImage BlogImage BlogImageLeft" style = "background-image: url(Images/PreviewuriBlog/XeoTalks2019.png);"></div>
+    
+                        <div class = "BlogTextContainer BlogTextLeft BackgroundDarkSecondary text-center">
+                            <h1 class = "SubTitle BlogTitle" id = "BlogElement">XeoTalks 2019</h1>
+                            <p class = "TextPrimary BlogText">After the last day of Xeo Summer School we had a meeting and to discuss  XeoTalks. This year we wanted to be bigger than last year and we started thinking about it 2 months before. (...)</p>
+                            <div class = "GradientBorder AnimationIncrease0">
+                                <a class = "ButtonTransparentMedium BlogReadMore" href = "BlogPosts/LocatieProvizorie/Blog-ID-20/Blog-ID-20.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

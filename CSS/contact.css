@@ -1,0 +1,338 @@
+/* 
+    This file contains all the locally used stuff, the second layer. 
+    
+    Page.html -> - style.css (code used across all pages like the navbar or custom buttons and animations)
+                 - Page.css (code that is specific for that page and that page only wich is not included in the other pages)
+*/
+
+body 
+{
+    background-position: 0% 85vh;
+    background-size: 100% 225vh;
+}
+
+@media(max-width: 1500px)
+{
+    body 
+    {
+        background-size: 100% 600vh;
+    }
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#PhoneEmailSection
+{
+    height: 87.5vh;
+}
+
+#PhoneCol, #EmailCol
+{
+    margin-top: 15vh;
+}
+
+.PhoneEmailContentMargin
+{
+    margin-top: 25px;
+}
+
+#PhoneEmailTitle
+{
+    font-size: var(--FontSizeTitleHuge);
+    font-weight: var(--FontWeightTitleHuge);
+}
+
+#PhoneEmailElement
+{
+    margin-top: 80px;
+}
+
+#PhoneIcon2
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 9px;
+    font-size: 24px;
+    transform: rotate(0deg);
+}
+
+#PhoneIcon3
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 9px;
+    font-size: 24px;
+    transform: rotate(0deg);
+}
+#PhoneIcon3:hover
+{
+    margin-left: 15px;
+    margin-top: 3px;
+    font-size: 33px;
+    -webkit-animation: spin 0.3s linear infinite;
+    -moz-animation: spin 0.3s linear infinite;
+    animation: spin 0.3s linear infinite;
+}
+
+@media(max-width: 1000px)
+{
+    .PhoneEmailSubTitle
+    {
+        font-size: 22px;
+    }
+}
+
+#PhoneTitle
+{
+    margin-left: -10px;
+}
+
+#EmailTitle
+{
+    margin-left: -15px;
+}
+
+#PhoneIcon2:hover
+{
+    margin-left: 15px;
+    margin-top: 3px;
+    font-size: 33px;
+    -webkit-animation: spin 0.3s linear infinite;
+    -moz-animation: spin 0.3s linear infinite;
+    animation: spin 0.3s linear infinite;
+}
+
+@-moz-keyframes spin 
+{ 
+    50% 
+    { 
+        -moz-transform: rotate(-20deg); 
+    } 
+
+    100% 
+    { 
+        -moz-transform: rotate(0deg); 
+    } 
+}
+
+@-webkit-keyframes spin 
+{ 
+    50% 
+    { 
+        -moz-transform: rotate(-20deg); 
+    }
+
+    100% 
+    { 
+        -webkit-transform: rotate(0deg); 
+    } 
+}
+
+@keyframes spin 
+{ 
+    50% 
+    { 
+        -webkit-transform: rotate(-20deg); 
+        transform:rotate(-20deg); 
+    }
+    
+    100% 
+    { 
+        -moz-transform: rotate(0deg); 
+        transform:rotate(0deg); 
+    }
+}
+
+#EmailIcon2
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+@media(max-width: 1000px)
+{
+    #PhoneEmailSection
+    {
+        height: 93.5vh;
+    }
+
+    #PhoneCol, #EmailCol
+    {
+        margin-top: 7.5vh;
+    }
+
+    #PhoneCol
+    {
+        margin-top: 5.5vh;
+    }
+
+    .PhoneEmailContentMargin
+    {
+        margin-top: 0vh;
+    }
+
+    #PhoneEmailElement
+    {
+        margin-top: 5vh;
+    }
+
+    @media(max-height: 800px)
+    {
+        .PhoneEmailSubTitle
+        {
+            font-size: 20px;
+        }
+    }
+}
+
+#SocialMediaIcon
+{
+    margin-left: 10px;
+}
+
+#SocialMediaEmbedsRow
+{
+    padding: 20px;
+    margin-bottom: 10vh;
+}
+
+.SocialMediaCol
+{
+    margin-top: 10vh;
+}
+
+.Embed
+{
+    overflow: hidden;
+    border: none;
+    border-radius: 15px;
+}
+
+.SocialMediaEmbedContainer
+{
+    border-radius: 15px;
+}
+
+.SocialMediaTitle
+{
+    margin-bottom: 50px;
+}
+
+#SocialMediaYoutubeRow
+{
+    margin-bottom: 15vh;
+}
+
+.YoutubeContainer
+{
+    width: 100%;
+}
+
+#FacebookEmbed
+{
+    width: 300px;
+    height: 500px;
+}
+
+@media(max-width: 769px)
+{
+    #FacebookCol
+    {
+        margin-top: 40px;
+    }
+
+    #SocialMediaTitleRow
+    {
+        margin-top: -20px;
+    }
+}
+
+#LocationTitleRow
+{
+    padding-top: 5vh;
+}
+
+#LocationTextRow
+{
+    padding-bottom: 10vh;
+}
+
+#LocationElement
+{
+    margin-top: 2vh;
+}
+
+#MapContainer
+{
+    padding: 50px;
+}
+
+#Map
+{
+    width: 100%;
+    height: 500px;
+    max-width: 900px;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s;
+    margin-bottom: 10vh;
+}
+
+#Map:hover
+{
+    transform: scale(1.01);
+}
+
+#Map:hover 
+{
+    opacity: 100%;
+}
+
+@media(max-width: 1200px)
+{
+    #LocationTitleRow
+    {
+        padding-top: 0vh;
+        padding-bottom: 5vh;
+    }
+}
+
+@media(max-width: 800px)
+{
+    #Map
+    {
+        height: 425px;
+    }
+
+    #MapContainer
+    {
+        padding: 20px;
+    }
+}
+
+@media(max-width: 550px)
+{
+    #LocationTitleRow
+    {
+        margin-top: -6vh;
+        padding-bottom: 6vh;
+    }
+
+    #Map
+    {
+        height: 375px;
+    }
+}
+
+@media(max-width: 425px)
+{
+    #Map
+    {
+        height: 275px;
+    }
+}
+

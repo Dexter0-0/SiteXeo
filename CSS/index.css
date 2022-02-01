@@ -1,0 +1,438 @@
+/* 
+    This file contains all the locally used stuff, the second layer. 
+    
+    Page.html -> - style.css (code used across all pages like the navbar or custom buttons and animations)
+                 - Page.css (code that is specific for that page and that page only wich is not included in the other pages)
+*/
+
+body 
+{
+    background-position: 0% 85vh;
+    background-size: 100% 150vh;
+}
+
+/*************************************** | Home Section | ****************************************/
+
+#HomeSection
+{
+    height: 85vh;
+}
+
+#HomeTitleRow
+{
+    max-width: 1200px;
+}
+
+@media(min-width: 1200px)
+{
+    #HomeTitleRow
+    {
+        margin-left: calc(50% - 600px);
+    }
+}
+
+#HomeTitle
+{
+    font-size: var(--FontSizeTitleHuge);
+    font-weight: var(--FontWeightTitleHuge);
+}
+
+@media(max-width: 900px)
+{
+    #HomeSubTitle
+    {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+}
+
+#HomeElement
+{
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
+
+/*************************************** | About Section | ****************************************/
+
+#AboutSection
+{
+    min-height: 80vh;
+}
+
+#AboutSubTitle
+{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+@media(max-width: 900px)
+{
+    #AboutSubTitle
+    {
+        font-size: 30px;
+    }
+}
+
+
+#AboutTitleRow
+{
+    max-width: 750px;
+}
+
+@media(min-width: 750px)
+{
+    #AboutTitleRow
+    {
+        margin-left: calc(50% - 375px);
+    }
+}
+
+#AboutTitle
+{
+    margin-top: 0vh;
+}
+
+/*************************************** | Sponsors Section | ****************************************/
+
+#SponsorsSection
+{
+    margin-top: -1px;
+}
+
+#SponsorsRobotContainer
+{
+    padding: 0;
+    overflow-x: hidden;
+    height: 400px;
+}
+
+#SponsorsBox0box:hover, #SponsorsBox1box:hover, #SponsorsBox2box:hover, #SponsorsBox3box:hover, 
+#SponsorsBox0boxmoveoff:hover, #SponsorsBox1boxmoveoff:hover, #SponsorsBox2boxmoveoff:hover, #SponsorsBox3boxmoveoff:hover,
+#SponsorsBox0boxrise:hover, #SponsorsBox1boxrise:hover, #SponsorsBox2boxrise:hover, #SponsorsBox3boxrise:hover
+{
+    opacity: 80%;    
+}
+
+/*************************************** | Blog Section | ****************************************/
+
+#BlogSection
+{
+    min-height: 70vh;
+}
+
+#BlogContainer
+{
+    min-height: 200%;
+}
+
+.BlogDelete
+{
+    display: none;
+}
+
+.BlogDeleteMargin
+{
+    margin-bottom: 100vh;
+}
+
+.BlogReadMore
+{
+    border: none;
+    background-color: var(--BackgroundDarkSecondary);
+}
+
+.BlogPost
+{
+    margin-top: 50px;
+    width: 90%;
+    height: 1000px;
+    margin-left: 5%;
+}
+
+.BlogImage
+{
+    background-size: 100% 100%;
+    border-radius: 15px;
+    height: 550px;
+    max-width: 850px;
+}
+
+@media(min-width: 800px)
+{
+    .BlogImage:hover, .BlogVideo:hover
+    {
+        opacity: 80%;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+}
+
+.BlogVideo
+{
+    background-size: 100% 100%;
+    border-radius: 15px;
+    max-width: 850px;
+    overflow: hidden;
+}
+
+.Video
+{
+    height: 550px;
+    max-width: 850px;  
+}
+
+video 
+{
+    object-fit: fill;
+}
+
+.BlogImageRight, .BlogVideoRight
+{
+    margin-left: calc(50% - 525px);
+}
+
+.BlogImageLeft, .BlogVideoLeft
+{
+    margin-left: calc(50% - 325px);
+}
+
+.BlogTextContainer
+{
+    padding: 50px;
+    border-radius: 15px;
+    margin-top: -225px;
+    max-width: 600px;
+    box-shadow: -2px -5px 18px #000000;
+    position: absolute;
+}
+
+.BlogTextRight
+{
+    margin-left: calc(50% - 175px);
+}
+
+.BlogTextLeft
+{
+    margin-left: calc(50% - 625px);
+}
+
+.BlogText 
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.BlogActivator
+{
+    margin-top: -100px;
+}
+
+#BlogTitle
+{
+    margin-bottom: 100px;
+}
+
+#ContentChooserRow
+{
+    margin-bottom: 200px;
+}
+
+@media(max-width: 1300px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight
+    {
+        margin-left: 15%;
+        width: 70%;
+        height: 500px;
+        max-width: none;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        position: relative;
+        margin-left: 20%;
+        margin-top: -150px;
+        max-width: none;
+        width: 60%;
+    }
+}
+
+@media(max-width: 900px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        margin-left: 1%;
+        width: 98%;
+        height: 400px;
+        max-width: none;
+    }
+
+    .Video
+    {
+        border-radius: 30px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        margin-top: -120px;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .BlogText 
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .BlogActivator
+    {
+        margin-top: -100px;
+    }
+
+    #ContentChooserRow
+    {
+        margin-bottom: 175px;
+    }
+}
+
+@media(max-width: 700px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 400px;
+    }
+
+    .BlogText 
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+}
+
+@media(max-width: 600px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 300px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        margin-top: -50px;
+        width: 80%;
+        margin-left: 10%;
+        padding: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .BlogActivator
+    {
+        margin-top: -275px;
+    }
+
+    #ContentChooserRow
+    {
+        margin-bottom: 325px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 250px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        margin-top: 0px;
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .BlogText 
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width: 425px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 200px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        margin-top: 10px;
+    }
+
+    #BlogTitle
+    {
+        margin-top: -125px;
+    }
+}
+
+@media(max-width: 350px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 160px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        padding: 15px;
+    }
+
+    .BlogText
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width: 300px)
+{
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        padding: 12px;
+    }
+}
+
+@media(min-width: 649px)
+{
+    .PhoneContentChooser
+    {
+        display: none;
+    }
+
+    .ContentChooserText
+    {
+        font-size: 27px;
+    }
+}
+
+@media(max-width: 650px)
+{
+    .PCContentChooser
+    {
+        display: none;
+    }
+
+
+    .ContentChooserText
+    {
+        font-size: 20px;
+    }
+}
+
+.ContentChooserOpacity
+{
+    opacity: 40%;
+}
